@@ -1,151 +1,215 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="awesomplete.css" />
-    <link rel="stylesheet" href="./estilos.css">
-    <title>lebrija comidas rapidas</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./node_modules/awesomplete/awesomplete.css" />
+  <link rel="stylesheet" href="./estilos.css">
+  <title>lebrija comidas rapidas</title>
 </head>
+
 <body>
-    <h1>Restaurantes en lebrija</h1>
-    <div class="buscador">
-        <input class="awesomplete" data-minChars="1" data-list="cabro asado, sobrebarriga asada, chatas, pollo, arroz" type="text" id="searchInput" placeholder="Buscar plato...">
+  <h1>Restaurantes en lebrija</h1>
+  <div class="buscador">
+    <input class="awesomplete" data-list="#todosLosPlatos" data-minChars="2" type="searchInput" id="searchInput"
+      placeholder="Buscar plato...">
+  </div>
+  <div class="todos">
+    <ul id="todosLosPlatos">
+      <li>Cabro Asado</li>
+      <li>Chop-suey de pollo</li>
+      <li>Arroz frito especial</li>
+      <li>Sopa de tallarines con verduras</li>
+      <li>Verduras chinas</li>
+      <li>Pollo kung-pao</li>
+      <li>Pato pekin</li>
+      <li>Rape</li>
+      <li>Pescado</li>
+      <li>Carne</li>
+      <li>Rollos </li>
+      <li>Sobrebarriga Asada</li>
+      <li>Chatas Asadas</li>
+      <li>Carne Oreada</li>
+      <li>Costillas de Cerdo</li>
+      <li>Pechuga a la plancha</li>
+      <li>Mojarra frita</li>
+      <li>Robalo apanado</li>
+      <li>Trucha a la plancha</li>
+      <li>Picadas</li>
+      <li>Hamburguesas</li>
+      <li>Perros calientes</li>
+      <li>Sandwich</li>
+      <li>Mojarra</li>
+      <li>Pechuga</li>
+      <li>Costillas BBQ</li>
+      <li>Parrillada</li>
+      <li>Churrasco</li>
+      <li>Camarones</li>
+      <li>chorizos</li>
+      <li>Parrillada tipica santandereana</li>
+      <li>Churrasco</li>
+      <li>Costillas de Cerdo BBQ</li>
+      <li>Chuletas de Cerdo</li>
+      <li>Cabro con Pepitoria</li>
+      <li>Milanesa</li>
+      <li>Pernil apanado</li>
+      <li>Casuela Marinera</li>
+      <li>Alitas BBQ</li>
+      <li>Alitas picantes</li>
+      <li>Carne oreada</li>
+      <li>Carne a la llanera</li>
+      <li>Cabro</li>
+      <li>Picadas</li>
+      <li>Piquetes</li>
+      <li>Chicharron</li>
+      <li>Mojarra frita</li>
+      <li>Casuela de bagre</li>
+      <li>Bagre frito</li>
+      <li>Ensalada de aguacate</li>
+
+    </ul>
+  </div>
+  <div class="cardsContainer">
+
+    <div class="card card-china" data-menu="arroz, chino, lumpias">
+      <h2>China Town</h2>
+      <img src="./imagenes/china town.jpg" alt="imagen de restaurante ">
+      <p>Restaurante cantones estamos ubicados en Calle 11#10-41 al frente de la panadería las delicias</p>
+      <ul id="china-town">
+        <li>Chop-suey de pollo</li>
+        <li>Arroz frito especial</li>
+        <li>Sopa de tallarines con verduras</li>
+        <li>Verduras chinas</li>
+        <li>Pollo kung-pao</li>
+        <li>Pato pekin</li>
+        <li>Rape</li>
+        <li>Pescado</li>
+        <li>Carne</li>
+        <li>Rollos </li>
+      </ul>
+
+      <div class="botones">
+        <a href="tel:+573203163007" class="button">Llamar</a>
+      </div>
+
     </div>
 
-<div class="cardsContainer">
-    
-    <div class="card card-china" data-menu="arroz, chino, lumpias">
-        <h2>China Town</h2>
-        <img src="./imagenes/china town.jpg" alt="imagen de restaurante ">
-        <p>Restaurante cantones estamos ubicados en Calle 11#10-41 al frente de la panadería las delicias</p>
-        <ul>
-          <li>Plato 1</li>
-          <li>Plato 2</li>
-          <li>Plato 3</li>
-          <li>Plato 4</li>
-          <li>Plato 5</li>
-          <li>Plato 6</li>
-          <li>Plato 7</li>
-          <li>Plato 8</li>
-          <li>Plato 9</li>
-          <li>Plato 10</li>
-         </ul>
-      
-         <div class="botones">
-            <a href="tel:+573203163007" class="button">Llamar</a>
-         </div>
-       
-      </div>
-      
-      <div class="card card-dys" data-menu="cabro asado, Sobrebarriga Asada, Chatas Asadas, Carne Oreada ">     
-          <h2>D y S</h2>
-          <img src="./imagenes/dys.jpg" alt="imagen de restaurante ">
-          <p>En Lebrija encontraras un buen sitio para compartir un momento especial.
-            Estamos ubicados en CALLE 12 # 8-44
-          </p>
-          <ul>
-            <li>Cabro Asado</li>
-            <li>Sobrebarriga Asada</li>
-            <li>Chatas Asadas</li>
-            <li>Carne Oreada</li>
-            <li>Costillas de Cerdo</li>
-            <li>Pechuga a la plancha</li>
-            <li>Mojarra frita</li>
-            <li>Robalo apanado</li>
-            <li>Trucha a la plancha</li>
-            <li>Picadas</li>
-           </ul>
-        
-         <div class="botones">
-            <a href="tel:+573186817123" class="button">Llamar</a> <a href="https://wa.me/+573186817123" class="button">WhatsApp</a>
-         </div>
-        
-         </div>
-      
-         <div class="card card-miPueblito" data-menu="pechuha, carne, hamburguesa, perros">     
-          <h2>Mi Pueblito</h2>
-          <img src="./imagenes/mi-pueblito.jpg" alt="imagen de restaurante ">
-          <p>Somos un restaurante campestre. Abrimos de martes a domingos de 12m - 10 pm.</p>
-          <ul>
-            <li>Plato 1</li>
-            <li>Plato 2</li>
-            <li>Plato 3</li>
-            <li>Plato 4</li>
-            <li>Plato 5</li>
-            <li>Plato 6</li>
-            <li>Plato 7</li>
-            <li>Plato 8</li>
-            <li>Plato 9</li>
-            <li>Plato 10</li>
-           </ul>
-        
-           <div class="botones">
-            <a href="tel:+573168832333" class="button">Llamar</a> <a href="https://wa.me/+573168832333" class="button">WhatsApp</a>
-         </div>
-        
-         </div>
-      
-         <div class="card card-pery" data-menu="hamburguesa, piza, carne, picadas">     
-          <h2>Restaurante Pery</h2>
-          <img src="./imagenes/pery.jpg" alt="imagen de restaurante ">
-          <p>Estamos ubicados en la: Cra 12 # 11-39.
-            Servimos con amor.
-          </p>
-          <ul>
-            <li>Parrillada tipica santandereana</li>
-            <li>Churrasco</li>
-            <li>Costillas de Cerdo BBQ</li>
-            <li>Chuletas de Cerdo</li>
-            <li>Cabro con Pepitoria</li>
-            <li>Milanesa</li>
-            <li>Pernil apanado</li>
-            <li>Casuela Marinera</li>
-            <li>Alitas BBQ</li>
-            <li>Alitas picantes</li>
-           </ul>
-        
-           <div class="botones">
-            <a href="tel:+573173394913" class="button">Llamar</a> <a href="https://wa.me/+573173394913" class="button">WhatsApp</a>
-         </div>
-        
-         </div>
+    <div class="card card-dys" data-menu="cabro asado, Sobrebarriga Asada, Chatas Asadas, Carne Oreada ">
+      <h2>D y S</h2>
+      <img src="./imagenes/dys.jpg" alt="imagen de restaurante ">
+      <p>En Lebrija encontraras un buen sitio para compartir un momento especial.
+        Estamos ubicados en CALLE 12 # 8-44
+      </p>
+      <ul id="china-town">
+        <li>Cabro Asado</li>
+        <li>Sobrebarriga Asada</li>
+        <li>Chatas Asadas</li>
+        <li>Carne Oreada</li>
+        <li>Costillas de Cerdo</li>
+        <li>Pechuga a la plancha</li>
+        <li>Mojarra frita</li>
+        <li>Robalo apanado</li>
+        <li>Trucha a la plancha</li>
+        <li>Picadas</li>
+      </ul>
 
-         <div class="card card-rachoLoco" data-menu="carne oreada, cerdo, pollo">     
-            <h2>Restaurante Racho Loco</h2>
-            <img src="./imagenes/rancho-loco.jpg" alt="imagen de restaurante ">
-            <p>El Restaurante rancho loco te ofrece la mejor comida Santandereana.
-                Estamos ubicados en la calle 8 # 9-40.
-            </p>
-            <ul>
-              <li>Plato 1</li>
-              <li>Plato 2</li>
-              <li>Plato 3</li>
-              <li>Plato 4</li>
-              <li>Plato 5</li>
-              <li>Plato 6</li>
-              <li>Plato 7</li>
-              <li>Plato 8</li>
-              <li>Plato 9</li>
-              <li>Plato 10</li>
-             </ul>
-          
-             <div class="botones">
-                <a href="tel:+573164179585" class="button">Llamar</a> <a href="https://wa.me/+573164179585" class="button">WhatsApp</a>
-             </div>
-          
-           </div>
-         
-      
-      
-         
-</div>
-<script src="./script.js"></script>
-<script src="awesomplete.js" async></script>
-    
+      <div class="botones">
+        <a href="tel:+573186817123" class="button">Llamar</a> <a href="https://wa.me/+573186817123"
+          class="button">WhatsApp</a>
+      </div>
+
+    </div>
+
+    <div class="card card-miPueblito"
+      data-menu="pechuha, carne, hamburguesa, perros calientes, Sandwich, Mojarra, costillas BBQ, camarones, Churrasco, chorizos">
+      <h2>Mi Pueblito</h2>--
+      <img src="./imagenes/mi-pueblito.jpg" alt="imagen de restaurante ">
+      <p>Somos un restaurante campestre. Abrimos de martes a domingos de 12m - 10 pm.</p>
+      <ul>
+        <li>Hamburguesas</li>
+        <li>Perros calientes</li>
+        <li>Sandwich</li>
+        <li>Mojarra</li>
+        <li>Pechuga</li>
+        <li>Costillas BBQ</li>
+        <li>Parrillada</li>
+        <li>Churrasco</li>
+        <li>Camarones</li>
+        <li>chorizos</li>
+      </ul>
+
+      <div class="botones">
+        <a href="tel:+573168832333" class="button">Llamar</a> <a href="https://wa.me/+573168832333"
+          class="button">WhatsApp</a>
+      </div>
+
+    </div>
+
+    <div class="card card-pery" data-menu="hamburguesa, piza, carne, picadas">
+      <h2>Restaurante Pery</h2>
+      <img src="./imagenes/pery.jpg" alt="imagen de restaurante ">
+      <p>Estamos ubicados en la: Cra 12 # 11-39.
+        Servimos con amor.
+      </p>
+      <ul>
+        <li>Parrillada tipica santandereana</li>
+        <li>Churrasco</li>
+        <li>Costillas de Cerdo BBQ</li>
+        <li>Chuletas de Cerdo</li>
+        <li>Cabro con Pepitoria</li>
+        <li>Milanesa</li>
+        <li>Pernil apanado</li>
+        <li>Casuela Marinera</li>
+        <li>Alitas BBQ</li>
+        <li>Alitas picantes</li>
+      </ul>
+
+      <div class="botones">
+        <a href="tel:+573173394913" class="button">Llamar</a> <a href="https://wa.me/+573173394913"
+          class="button">WhatsApp</a>
+      </div>
+
+    </div>
+
+    <div class="card card-rachoLoco" data-menu="carne oreada, cerdo, pollo">
+      <h2>Restaurante Racho Loco</h2>
+      <img src="./imagenes/rancho-loco.jpg" alt="imagen de restaurante ">
+      <p>El Restaurante rancho loco te ofrece la mejor comida Santandereana.
+        Estamos ubicados en la calle 8 # 9-40.
+      </p>
+      <ul>
+        <li>Carne oreada</li>
+        <li>Carne a la llanera</li>
+        <li>Cabro</li>
+        <li>Picadas</li>
+        <li>Piquetes</li>
+        <li>Chicharron</li>
+        <li>Mojarra frita</li>
+        <li>Casuela de bagre</li>
+        <li>Bagre frito</li>
+        <li>Ensalada de aguacate</li>
+      </ul>
+
+      <div class="botones">
+        <a href="tel:+573164179585" class="button">Llamar</a> <a href="https://wa.me/+573164179585"
+          class="button">WhatsApp</a>
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+  <script src="./node_modules/awesomplete/awesomplete.js" async></script>
+  <script src="./script.js"></script>
+
+
 </body>
+
 </html>
