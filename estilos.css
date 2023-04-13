@@ -42,8 +42,12 @@ input:focus {
   }
   
   .cardsContainer div,p,h2,ul,img,li{
-    background-color: red;
+    background-color: white;
   }
+.cardsContainer p,h2,li{
+  color: red;
+  font-weight: bold;
+}
 
 h1 {
     font-size: 36px;
