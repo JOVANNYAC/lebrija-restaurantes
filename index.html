@@ -18,11 +18,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./awesomplete.css" />
   <link rel="stylesheet" href="./estilos.css">
-  <title>Listado de restaurantes en lebrija - actualizado abril de 20230</title>
+  <title>Listado de restaurantes en lebrija - actualizado abril de 2023</title>
 </head>
 
 <body>
-  <h1>Restaurantes en lebrija</h1>
+  <header>
+    <img class="logo" src="./imagenes/Logo-grande.png" alt="logo de la pagina">
+  <h1> Restaurantes en lebrija</h1>
+  </header>
   <div class="buscador">
     <input class="awesomplete" data-list="#todosLosPlatos" data-minChars="2" type="searchInput" id="searchInput"
       placeholder="Buscar plato...">
@@ -125,6 +128,31 @@
 
   <div class="cardsContainer">
 
+    <div class="card card-donde-nato"
+      data-menu="Choripapa, Papas Locas, Hamburguesa, Patacones, Perros Calientes, Picadas ">
+      <h2>Donde Nato</h2>
+      <img src="./imagenes/donde-nato.jpg"
+        alt="imagen del logo del restaurante: comidas rapidas donde nato ">
+      <p> Disfruta de los mejores pecios y sabores en nuestro horario, miercoles a lunes apartir de 4:00pm 😍🥪
+        estamos ubicados en la CALLE 13 # 9-30, barrio CENTRO, LEBRIJA,
+        CELS. 3123270865 - 3173934452 - 3013621833
+      </p>
+      <ul id="donde-nato">
+        <li>Choripapa</li>
+        <li>Papas Locas</li>
+        <li>Hamburguesa</li>
+        <li>Patacones</li>
+        <li>Perros Calientes</li>
+        <li>Picadas</li>
+      </ul>
+
+      <div class="botones">
+        <a href="tel:+573173934452" class="button">Llamar</a>
+        <a href="https://wa.me/+573123270865" class="button">WhatsApp</a>
+      </div>
+
+    </div>
+
     <div class="card card-kaprichos"
       data-menu="Choripapa, Helados, Hamburguesa, Wafles, Fresas con crema, Huevos diferentes preparaciones, Patacones, Perros Calientes, Sandwich, frappes">
       <h2>Kaprichos</h2>
@@ -133,7 +161,7 @@
       <p> Heladería y frutería ubicada en lebrija santander, carrera 7 # 11-02 centro lebrija santander , Lebrija,
         Colombia
       </p>
-      <ul id="gohan-sushi">
+      <ul id="kaprichos">
         <li>Choripapa</li>
         <li>Helados</li>
         <li>Hamburguesa</li>

@@ -52,8 +52,20 @@ input:focus {
 h1 {
     font-size: 36px;
     font-weight: bold;
-    text-align: center;
-    margin-top: 50px;
+    text-align: center;  
+  }
+
+  .logo{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    justify-content: center;
+    
+  }
+  header{
+    display: flex;
+  margin-top: 20px;
+    justify-content: center;
   }
 
   .parrafo {
@@ -119,8 +131,14 @@ h1 {
       }
   }
 
-  @media (max-width:500px) {
+  @media (max-width:520px) {
     .cardsContainer{
         grid-template-columns: 1fr;
+      }
+      header{
+        flex-wrap: wrap;
+      }
+      .logo {
+        margin-right: 0;
       }
   }
