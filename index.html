@@ -24,7 +24,7 @@
 <body>
   <header>
     <img class="logo" src="./imagenes/Logo-grande.png" alt="logo de la pagina">
-  <h1> Restaurantes en lebrija</h1>
+    <h1> Restaurantes en lebrija</h1>
   </header>
   <div class="buscador">
     <input class="awesomplete" data-list="#todosLosPlatos" data-minChars="2" type="searchInput" id="searchInput"
@@ -46,11 +46,11 @@
       <li>Arroz frito especial</li>
       <li>Sopa de tallarines con verduras</li>
       <li>Verduras chinas</li>
-      <li>Pollo kung-pao</li>
+      <li>Pollo frito</li>
       <li>Pato pekin</li>
       <li>Rape</li>
       <li>Pescado</li>
-      <li>Carne</li>
+      <li>Carne a la plancha</li>
       <li>Rollos </li>
       <li>Sobrebarriga Asada</li>
       <li>Chatas Asadas</li>
@@ -127,17 +127,53 @@
       <li>Salchipapa</li>
       <li>Genova de Bufalo</li>
       <li>Chorizo de Bufalo</li>
+      <li>Spaguetti</li>
+      <li>Mute</li>
+      <li>Bandeja paisa</li>
+      <li>Higado encebollado</li>
+      <li>Cerdo a la plancha</li>
+      <li>Bistec a Caballo</li>
+      <li>Obleas</li>
+
+
+
     </ul>
   </div>
 
   <div class="cardsContainer">
 
-    <div class="card card-san-bufalo"
-      data-menu="Filete de pechuga, Filete de Bufalo, Filete de res, Hamburguesa, Perros Calientes, 
+    <div class="card card-lebrilandia" data-menu="Mute, Bandeja paisa, Chicharron, Higado encebollado, Cerdo a la plancha, Bistec a Caballo,
+      Milanesa, Mojarra frita, Cabro con Pepitoria, Wafles, Obleas ">
+      <h2>Lebrilandia</h2>
+      <img src="./imagenes/lebrilandia.png" alt="imagen del logo del restaurante: lebrilandia ">
+      <p> Parque de atracciones y Heladería campestre Naturaleza para grandes y chicos.
+        Estamos ubicados en la Calle 12 No. 15B - 225, Lebrija, Colombia.
+      </p>
+      <ul id="lebrilandia">
+        <li>Mute</li>
+        <li>Bandeja paisa</li>
+        <li>Chicharron</li>
+        <li>Higado encebollado</li>
+        <li>Cerdo a la plancha</li>
+        <li>Bistec a Caballo</li>
+        <li>Milanesa</li>
+        <li>Mojarra frita</li>
+        <li>Cabro con Pepitoria</li>
+        <li>Wafles</li>
+        <li>Obleas</li>
+      </ul>
+
+      <div class="botones">
+        <a href="tel:+573172714028" class="button">Llamar</a>
+        <a href="https://wa.me/+573172714028" class="button">WhatsApp</a>
+      </div>
+
+    </div>
+
+    <div class="card card-san-bufalo" data-menu="Filete de pechuga, Filete de Bufalo, Filete de res, Hamburguesa, Perros Calientes, 
       Picadas, Desgranados, Sandwich, Salchipapa, Choripapa, Genova de Bufalo, Chorizo de Bufalo ">
       <h2>San Bufalo</h2>
-      <img src="./imagenes/san-bufalo.jpg"
-        alt="imagen del logo del restaurante: san Bufalo ">
+      <img src="./imagenes/san-bufalo.jpg" alt="imagen del logo del restaurante: san Bufalo ">
       <p> Estamos ubicados en la CALLE 12 CARRERA 12 esquina, Barrio centro, Lebrija.
       </p>
       <ul id="san-bufalo">
@@ -165,8 +201,7 @@
     <div class="card card-donde-nato"
       data-menu="Choripapa, Papas Locas, Hamburguesa, Patacones, Perros Calientes, Picadas ">
       <h2>Donde Nato</h2>
-      <img src="./imagenes/donde-nato.jpg"
-        alt="imagen del logo del restaurante: comidas rapidas donde nato ">
+      <img src="./imagenes/donde-nato.jpg" alt="imagen del logo del restaurante: comidas rapidas donde nato ">
       <p> Disfruta de los mejores pecios y sabores en nuestro horario, miercoles a lunes apartir de 4:00pm 😍🥪
         estamos ubicados en la CALLE 13 # 9-30, barrio CENTRO, LEBRIJA,
         CELS. 3123270865 - 3173934452 - 3013621833
@@ -187,8 +222,8 @@
 
     </div>
 
-    <div class="card card-kaprichos"
-      data-menu="Choripapa, Helados, Hamburguesa, Wafles, Fresas con crema, Huevos diferentes preparaciones, Patacones, Perros Calientes, Sandwich, frappes">
+    <div class="card card-kaprichos" data-menu="Choripapa, Helados, Hamburguesa, Wafles, Fresas con crema, Huevos diferentes preparaciones,
+       Patacones, Perros Calientes, Sandwich, frappes">
       <h2>Kaprichos</h2>
       <img src="./imagenes/kaprichos.jpg"
         alt="imagen del logo del restaurante: fruteria, cafeteria, heladeria, comidas rapidas kaprichos ">
@@ -241,7 +276,9 @@
 
     </div>
 
-    <div class="card card-kata" data-menu="">
+    <div class="card card-kata" data-menu="Arroz chino, Maduro con queso y bocadillo, Pollo azado,
+     Pollo Broaster, Casuela Camarones, Casuela Bagre, Mojarra marinera, Trucha rellena, Filete de robalo,
+     Pechuha a la plancha">
       <h2>Pollos Kata</h2>
       <img src="./imagenes/pollos-kata.jpg" alt="imagen del logo del restaurante: Pollos Kata">
       <p>Azadero Pollos Kata.
@@ -322,25 +359,29 @@
 
 
     <div class="card card-china" data-menu="Chop-suey de pollo, Arroz frito especial, Sopa de tallarines con verduras,
-    Verduras chinas, Pollo kung-pao, Pato pekin, Rape, Pescado, carne, Rollos">
+    Verduras chinas, Pollo frito, Pato pekin, Rape, Pescado, Carne a la plancha, Rollos, arroz chino, Spaguetti">
       <h2>China Town</h2>
       <img src="./imagenes/china town.jpg" alt="imagen del logo del restaurante: china-town ">
-      <p>Restaurante cantones estamos ubicados en Calle 11#10-41 al frente de la panadería las delicias</p>
+      <p>Restaurante cantones estamos ubicados en Calle 11#10-41 al frente de la panadería las delicias,
+        Cels: 320316300 3508896083 3102366926 3183967602
+      </p>
       <ul id="china-town">
         <li>Chop-suey de pollo</li>
         <li>Arroz frito especial</li>
         <li>Sopa de tallarines con verduras</li>
         <li>Verduras chinas</li>
-        <li>Pollo kung-pao</li>
+        <li>Pollo frio</li>
         <li>Pato pekin</li>
         <li>Rape</li>
         <li>Pescado</li>
-        <li>Carne</li>
+        <li>Carne a la plancha</li>
         <li>Rollos </li>
+        <li>Spaguetti</li>
       </ul>
 
       <div class="botones">
         <a href="tel:+573203163007" class="button">Llamar</a>
+        <a href="https://wa.me/+573183967602" class="button">WhatsApp</a>
       </div>
 
     </div>
@@ -454,7 +495,8 @@
   </div>
 
   <footer>
-    <div class="redes-sociales"><a href="https://www.facebook.com/lebrijarestaurantes" target="_blank"><img src="./imagenes/facebook.png" alt="icono de facebook"></a></div>
+    <div class="redes-sociales"><a href="https://www.facebook.com/lebrijarestaurantes" target="_blank"><img
+          src="./imagenes/facebook.png" alt="icono de facebook"></a></div>
   </footer>
 
   <script src="./awesomplete.js" async></script>
