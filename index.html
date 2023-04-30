@@ -24,7 +24,7 @@
 <body>
   <header>
     <img class="logo" src="./imagenes/Logo-grande.png" alt="logo de la pagina">
-    <h1> Restaurantes en lebrija</h1>
+    <h1 id="titulo"> Restaurantes en lebrija</h1>
   </header>
   <div class="buscador">
     <input class="awesomplete" data-list="#todosLosPlatos" data-minChars="2" type="searchInput" id="searchInput"
@@ -495,8 +495,16 @@
   </div>
 
   <footer>
+    <div class="inicio-logo">
+      <a href="#titulo"><img src="imagenes/Logo-grande.png" 
+        alt="logo para hacer click y volver al inicio de la pagina">
+      </a>
+      <p>Estamos haciendo actualizaciones constantemente</p>
+    </div>
+
     <div class="redes-sociales"><a href="https://www.facebook.com/lebrijarestaurantes" target="_blank"><img
-          src="./imagenes/facebook.png" alt="icono de facebook"></a></div>
+          src="./imagenes/facebook.png" alt="icono de facebook"></a>
+    </div>
   </footer>
 
   <script src="./awesomplete.js" async></script>
