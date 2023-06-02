@@ -31,24 +31,10 @@ searchInput.addEventListener('keydown', (event) => {
 /*codigo para mostrar las cards aleatoriamente*/
 
 
-window.addEventListener('load', function() {
-  let cardsContainer = document.querySelector('#cards-container');
-  let cards = Array.from(cardsContainer.children);
-  
-  // Función para reordenar aleatoriamente un array
-  function shuffle(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-      let j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
-  }
-  
-  // Reordenar las cards
-  let shuffledCards = shuffle(cards);
-  
-  // Agregar las cards reordenadas al contenedor
-  shuffledCards.forEach(card => cardsContainer.appendChild(card));
-});
-
+let cardsRest = document.querySelectorAll(".card");
+        for (let i = 0; i < cardsRest.length; i++) {
+            let target = Math.floor(Math.random() * cardsRest.length - 1) + 1;
+            let target2 = Math.floor(Math.random() * cardsRest.length - 1) + 1;
+            cardsRest[target].parentNode.insertBefore(cardsRest[target], cardsRest[target2]);
+        }
  
