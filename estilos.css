@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Kalam', cursive;
-    background-color: yellow;
+    background-color: white;
     
 }
 
@@ -13,6 +13,7 @@
     display: flex;
     justify-content: center;
     margin-left: 5px;
+   
     
 }
 .buscador input{
@@ -37,16 +38,21 @@ input:focus {
 
 
 
-.cardsContainer{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    
-  }
-  
-  .cardsContainer div,p,h2,ul,img,li{
+.container-card{
+  display: grid;
+  /*grid-template-columns: repeat(5, 1fr);*/
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  box-sizing: border-box;
+  justify-self: center;
+  place-items: center;
+
+}
+
+  .container-card div,p,h2,ul,img,li{
     background-color: white;
   }
-.cardsContainer p,h2,li{
+.container-card p,h3,li{
   color: black;
   font-weight: bold;
   font-size: 16px;
@@ -67,8 +73,9 @@ h1 {margin: 0 30px;
   }
   header{
     display: flex;
-  margin-top: 20px;
+    margin-top: 20px;
     justify-content: center;
+    align-items: center;
   }
 
   .parrafo {
@@ -77,36 +84,6 @@ h1 {margin: 0 30px;
     text-align: center;
     margin: 30px ;
   }
-/*
-.card {
-  
-    width: 80%;
-    margin: 20px auto;
-    background-color: rgb(225, 161, 161);
-    box-shadow: 10px 5px 5px black;
-  } */
-  
-  .card h2 {
-    padding: 10px 10px;
-    text-align: center;
-    font-size: 24px;
-  }
-  
-  .card img {
-    width: 100%;
-    padding: 15px 0 15px;
-    
-  }
-  
-  .card ul {
-    list-style-type: none;
-    padding-left: 15px;
-  }
-  .card p{
-    text-align: center;
-    padding: 10px;
-
-  }
 
   .botones {
     display: flex;
@@ -114,13 +91,15 @@ h1 {margin: 0 30px;
     justify-content: space-around;
     padding: 15px 0 15px;
     justify-self: end;
+    margin-top: auto;
+    margin-bottom: 20px;
     
   }
 
   .button {
     display: inline-block;
     padding: 6px 10px;
-    background-color: #4CAF50;
+    background-color: #25D366;
     color: white;
     text-decoration: none;
     font-size: 16px;
@@ -157,6 +136,15 @@ h1 {margin: 0 30px;
   }
 
 
+  .card-individual {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .card-individual img {
+    max-width: 100%;
+  }
+
   @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
   *{
       margin: 0;
@@ -182,10 +170,13 @@ grid-template-columns: repeat(4, 1fr);
     color: #7a7a7a;
   }
   .card{
-    width: 100%;
-    margin: 20px;
-    border-radius: 6px;
-    overflow: hidden;
+    
+   width: 260px; /* Establece el ancho deseado para la tarjeta */
+   height: auto; /* Esto permite que la altura se ajuste automáticamente según el contenido */
+   border: 1px solid #ccc; /* Agrega un borde para la tarjeta si lo deseas */
+   margin: 10px; /* Espaciado entre las tarjetas si hay más de una */
+   overflow: hidden; /* Controla el desbordamiento de contenido */
+      
     background:#fff;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
     transition: all 400ms ease-out;
@@ -200,10 +191,13 @@ grid-template-columns: repeat(4, 1fr);
     height: 210px;
   }
   .card .contenido-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 15px;
     text-align: center;
   }
-  .card .contenido-card h3{
+  .card .contenido-card h2{
     margin-bottom: 15px;
     color: #7a7a7a;
   }
@@ -215,10 +209,10 @@ grid-template-columns: repeat(4, 1fr);
   }
   .card .contenido-card a{
     display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
+    padding: 5px;
+    margin-top: 5px;
     text-decoration: none;
-    color: #2fb4cc;
+    color: black;
     border: 1px solid #2fb4cc;
     border-radius: 4px;
     transition: all 400ms ease;
@@ -261,20 +255,24 @@ grid-template-columns: repeat(4, 1fr);
     animation: fadeIn 1s;
   }
   
-  @media (max-width:900px) {
-    .cardsContainer{
-        grid-template-columns: repeat(2, 1fr);
+  @media (max-width:1100px) {
+    .container-card{
+        grid-template-columns: repeat(3, 1fr);
       }
   }
 
-  @media (max-width:520px) {
-    .cardsContainer{
-        grid-template-columns: 1fr;
-      }
-      header{
-        flex-wrap: wrap;
-      }
-      .logo {
-        margin-right: 0;
-      }
+  @media (max-width:850px) {
+    .container-card{
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width:600px) {
+    .container-card{
+        grid-template-columns: repeat(1, 1fr);
+  }}
+
+  header{
+    display: flex;
+    flex-direction: column;
   }
