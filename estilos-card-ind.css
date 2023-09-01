@@ -81,4 +81,13 @@
         width: 100%;
         height: auto;
       }
-  
+      @media (max-width: 768px) {
+        .slider {
+          width: 100%; /* Ajusta el ancho del slider para dispositivos móviles */
+        }
+      
+        .slider img {
+          max-width: 100%; /* Ajusta el tamaño de las imágenes para dispositivos móviles */
+          height: auto;
+        }
+      }
