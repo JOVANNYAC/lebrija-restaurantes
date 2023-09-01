@@ -58,7 +58,8 @@ input:focus {
   font-size: 16px;
 }
 
-h1 {margin: 0 30px;
+h1 {
+    margin: 10px 30px;
     font-size: 36px;
     font-weight: bold;
     text-align: center;  
@@ -135,15 +136,6 @@ h1 {margin: 0 30px;
     font-weight: bold;
   }
 
-
-  .card-individual {
-    max-width: 80%;
-    height: auto;
-  }
-
-  .card-individual img {
-    max-width: 100%;
-  }
 
   @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
   *{

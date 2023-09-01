@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "awesomplete": "^1.1.5"
+    "awesomplete": "^1.1.5",
+    "slick-carousel": "^1.8.1"
   }
 }
