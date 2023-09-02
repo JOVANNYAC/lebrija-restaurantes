@@ -52,12 +52,12 @@
   }
   
   .card-individual .button {
-    display: inline-block;
+    display:flex;
+    justify-content: space-between;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color:#3e8e41;
     color: #fff;
     text-decoration: none;
-    margin-right: 10px;
     border-radius: 5px;
     font-size: 16px;
   }
@@ -68,28 +68,62 @@
 
 
 
-    /* Estilo para el contenedor del slider */
-    .slider-container {
-        width: 100%; /* Cambia esto a un valor fijo, por ejemplo, 600px */
-        height: auto; /* Cambia esto a la altura deseada */
-        margin: 0 auto;
-        overflow: hidden;
-      }
+   /* Estilo para el contenedor del slider */
+.slider-container {
+    width: 100%;
+    max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */
+    margin: 0 auto;
+    overflow: hidden;
+  }
   
-      /* Estilo para las imágenes en el slider */
-      .slider img {
-        width: 100%;
-        height: auto;
-      }
-      @media (max-width: 768px) {
-        .slider {
-          width: 100%; /* Ajusta el ancho del slider para dispositivos móviles */
-        }
-      
-        .slider img {
-          max-width: 100%; /* Ajusta el tamaño de las imágenes para dispositivos móviles */
-          height: auto;
-        }
-      }
+  /* Estilo para el contenedor de las diapositivas */
+  .slider {
+    display: flex; /* Para alinear las diapositivas horizontalmente */
+    transition: transform 0.5s ease; /* Transición suave al cambiar de diapositivas */
+  }
+  
+  /* Estilo para cada diapositiva */
+  .slider div {
+    flex: 0 0 100%; /* Asegura que cada diapositiva ocupe el 100% del ancho del contenedor */
+    padding: 10px; /* Agrega espacio entre las diapositivas si lo deseas */
+    box-sizing: border-box;
+  }
+  
+  /* Estilo para las imágenes dentro de las diapositivas */
+  .slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Estilo para los botones de navegación "Prev" y "Next" */
+.prev, .next {
+    background-color: #007bff; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 0 10px; /* Margen entre los botones */
+    transition: background-color 0.3s ease; /* Transición de color suave */
+  }
+  
+  /* Estilo al pasar el cursor por encima de los botones */
+  .prev:hover, .next:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor */
+  }
+
+  .icono-redes {
+    width: 50px;
+    height: auto;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
 
       

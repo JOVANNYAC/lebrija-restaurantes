@@ -19,13 +19,12 @@
     <link rel="stylesheet" href="./awesomplete.css" />
     <link rel="stylesheet" href="./estilos-card-ind.css">
     <link rel="stylesheet" href="./estilos.css">
-    <link rel="stylesheet" type="text/css" href="node_modules\slick-carousel\slick\slick.css"/>
-    <link rel="stylesheet" type="text/css" href="node_modules\slick-carousel\slick\slick-theme.css"/>
     <title>Lebrilandia</title>
 </head>
 <body>
     <div class="card-individual card-lebrilandia" data-menu=" Lebrilandia ">
         <h3>Lebrilandia</h3>
+        
         <div class="slider-container">
           <div class="slider">
             <div><img src="./imagenes/lebrilandia.png" alt="foto del interior del restaurante"></div>
@@ -34,11 +33,10 @@
             <div><img src="./img-lebrilandia/lebrilandia-3.jpg" alt="foto del interior del restaurante"></div>
             <div><img src="./img-lebrilandia/lebrilandia-4.jpg" alt="foto del interior del restaurante"></div>
             <div><img src="./img-lebrilandia/lebrilandia-5.jpg" alt="foto del interior del restaurante"></div>
-            
-            
           </div>
         </div>
-        
+        <button class="prev"> < </button>
+        <button class="next"> > </button>
         <p> Parque de atracciones y Heladería campestre Naturaleza para grandes y chicos.
           Estamos ubicados en la Calle 12 No. 15B - 225, Lebrija, Colombia.
         </p>
@@ -60,42 +58,31 @@
           <a href="tel:+573172714028" class="button">Llamar</a>
           <a href="https://wa.me/+573172714028" class="button">WhatsApp</a>
         </div>
-        <div class="redes-sociales-lebrilandia"><a href="https://www.facebook.com/lebrilandia" target="_blank"><img
-          src="./imagenes/facebook.png" alt="icono de facebook"></a>
+
+        <div class="redes-sociales-lebrilandia">
+          <a href="https://www.facebook.com/lebrilandia" target="_blank">
+            <img class="icono-redes" src="./imagenes/facebook.png" alt="icono de facebook"></a>
+          <a href="https://www.instagram.com/lebrilandia/" target="_blank">
+            <img class="icono-redes" src="./imagenes/instagram.png" alt="icono de instagram"></a>
+       </div>
+
     </div>
-      </div>
 
       <footer>
         <div class="inicio-logo">
-          <a href="#titulo"><img src="imagenes/Logo-grande.png" 
+          <a href="./index.html"><img src="imagenes/Logo-grande.png" 
             alt="logo para hacer click y volver al inicio de la pagina">
           </a>
+        </div>
           <div class="footer-final">
             <p>Estamos haciendo actualizaciones constantemente</p>
             <P>Desarrollado por JOVANNY A. C. 2023</P>
           </div>
-        </div>
-    
+        
 
       </footer>
 
-      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-      <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-      <script type="text/javascript" src="./node_modules/slick-carousel/slick/slick.min.js"></script>
-
-      <script>
-        $(document).ready(function() {
-          // Inicializa el slider
-          $('.slider').slick({
-            dots: true,
-  infinite: true,
-  speed: 500,
-  fade: true,
-  cssEase: 'linear'
-});
-  
-        });
-      </script>
+      <script src="./script-cad-ind.js" defer></script>
     
 </body>
 </html>
