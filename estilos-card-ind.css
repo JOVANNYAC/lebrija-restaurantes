@@ -71,7 +71,7 @@
     /* Estilo para el contenedor del slider */
     .slider-container {
         width: 100%; /* Cambia esto a un valor fijo, por ejemplo, 600px */
-        height: 400px; /* Cambia esto a la altura deseada */
+        height: auto; /* Cambia esto a la altura deseada */
         margin: 0 auto;
         overflow: hidden;
       }
@@ -91,3 +91,5 @@
           height: auto;
         }
       }
+
+      
