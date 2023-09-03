@@ -162,7 +162,7 @@ grid-template-columns: repeat(4, 1fr);
     color: #7a7a7a;
   }
   .card{
-    
+   position: relative; /*para poder colocar elementos encima*/
    width: 260px; /* Establece el ancho deseado para la tarjeta */
    height: auto; /* Esto permite que la altura se ajuste automáticamente según el contenido */
    border: 1px solid #ccc; /* Agrega un borde para la tarjeta si lo deseas */
@@ -182,6 +182,43 @@ grid-template-columns: repeat(4, 1fr);
     width: 100%;
     height: 210px;
   }
+
+  .texto-sobre-img{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+    position: absolute;
+    margin-top: 10px;
+    padding-right: 20px;
+  }
+
+  .texto-sobre-img p{
+    padding: 2px;
+    font-size: 20px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    color: white;
+    background-color: red;
+    
+  }
+
+  .animacion-parpadeo{
+
+    background-color: green;
+    animation: parpadeo 1.5s infinite alternate;
+
+  }
+
+  @keyframes parpadeo {
+    0% {
+        opacity: 1; /* Totalmente visible */
+    }
+    100% {
+        opacity: 0; /* Totalmente invisible */
+    }
+}
+
+
   .card .contenido-card{
     display: flex;
     flex-direction: column;
@@ -199,16 +236,14 @@ grid-template-columns: repeat(4, 1fr);
     font-size: 14px;
     margin-bottom: 5px;
   }
-  .card .contenido-card a{
+  .link-tarjeta{
     display: inline-block;
-    padding: 5px;
-    margin-top: 5px;
+    padding: 3px 5px; /* Ajusta el padding según tus preferencias */
+    background-color: #3498db; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
     text-decoration: none;
-    color: black;
-    border: 1px solid #2fb4cc;
-    border-radius: 4px;
-    transition: all 400ms ease;
-    margin-bottom: 5px;
+    font-weight: bold; /* Texto en negrita */
+    transition: background-color 0.3s ease; /* Transición de color de fondo*/
   }
   .card .contenido-card a:hover{
     background: #2fb4cc;
