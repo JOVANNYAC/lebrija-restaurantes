@@ -6,6 +6,12 @@
     
 }
 
+/*dispaly none*/
+
+.card-dys {
+  display: none;
+}
+
 #todosLosPlatos{
   display: none;
 }
@@ -204,7 +210,7 @@ grid-template-columns: repeat(4, 1fr);
 
   .animacion-parpadeo{
 
-    background-color: green;
+    background-color: green ;
     animation: parpadeo 1.5s infinite alternate;
 
   }
