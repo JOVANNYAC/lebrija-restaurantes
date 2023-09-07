@@ -189,40 +189,7 @@ grid-template-columns: repeat(4, 1fr);
     height: 210px;
   }
 
-  .texto-sobre-img{
-   width: 100%;
-   display: flex;
-   flex-direction: row;
-   justify-content: flex-end;
-    position: absolute;
-    margin-top: 10px;
-    padding-right: 20px;
-  }
 
-  .texto-sobre-img p{
-    padding: 2px;
-    font-size: 20px; /* Tamaño del texto */
-    font-weight: bold; /* Texto en negrita */
-    color: white;
-    background-color: red;
-    
-  }
-
-  .animacion-parpadeo{
-
-    background-color: green ;
-    animation: parpadeo 1.5s infinite alternate;
-
-  }
-
-  @keyframes parpadeo {
-    0% {
-        opacity: 1; /* Totalmente visible */
-    }
-    100% {
-        opacity: 0; /* Totalmente invisible */
-    }
-}
 
 
   .card .contenido-card{
